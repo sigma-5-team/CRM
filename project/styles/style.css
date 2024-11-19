@@ -1,0 +1,63 @@
+body {
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#header {
+    background: linear-gradient(to bottom right, pink, greenyellow);
+
+    #icon {
+        width: 3.5em;
+    }
+}
+
+main {
+    .icons {
+        width: 6.5em;
+    }
+
+    #abilities {
+        background: khaki;
+    }
+
+    #faq {
+        background: lightblue;
+    }
+
+    #support {
+        background: pink;
+    }
+}
+
+footer {
+    > .icons {
+        font-size: 3em;
+    }
+}
+
+.circle {
+    animation: circle ease-out 5s infinite;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: red;
+}
+
+@keyframes circle {
+    0% {
+        background: red;
+    }
+    25% {
+        background: yellow;
+    }
+    50% {
+        background: green;
+    }
+    75% {
+        background: dodgerblue;
+    }
+    100% {
+        background: pink;
+    }
+}
