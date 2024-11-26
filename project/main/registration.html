@@ -11,10 +11,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
 
-  <link href="styles/register.css" rel="stylesheet">
+  <link href="../styles/registration.css" rel="stylesheet">
   <title>Registration</title>
 </head>
 <body>
+<a href="javascript:history.back()">Back to previous page</a>
 <div class="container-fluid col-6 d-flex justify-content-center align-items-center vh-100">
   <form class="row g-3">
     <div class="col-md-6">
@@ -22,8 +23,8 @@
       <input placeholder="user@example.com" type="email" class="form-control" id="inputEmail4">
     </div>
     <div class="col-md-6">
-      <label for="inputPassword4" class="form-label">Пароль</label>
-      <input type="password" class="form-control" id="inputPassword4">
+      <label for="phone" class="form-label">Телефон</label>
+      <input type="text" class="form-control" id="phone" placeholder="+38 (0XX) XXX-XX-XX" required>
     </div>
     <div class="col-md-4">
       <label for="surname" class="form-label">Прізвище</label>
@@ -34,25 +35,16 @@
       <input placeholder="Богдан" type="text" class="form-control" id="name">
     </div>
     <div class="col-md-4">
-      <label for="maturity" class="form-label">По батькові</label>
-      <input placeholder="Богданович" type="text" class="form-control" id="maturity">
-    </div>
-    <div class="col-md-12">
-      <label for="file" class="form-label">Фото профілю</label>
-      <input type="file" class="form-control" id="file">
+      <label for="patronymic" class="form-label">По батькові</label>
+      <input placeholder="Богданович" type="text" class="form-control" id="patronymic">
     </div>
     <div class="col-md-6">
       <label for="bday" class="form-label">Дата народження</label>
       <input type="date" class="form-control" id="bday">
     </div>
     <div class="col-md-6">
-      <label for="group" class="form-label">Група</label>
-      <select class="form-select" id="group">
-        <option>IA-31</option>
-        <option>IA-32</option>
-        <option>IA-33</option>
-        <option>IA-34</option>
-      </select>
+      <label for="inputPassword4" class="form-label">Пароль</label>
+      <input type="password" class="form-control" id="inputPassword4">
     </div>
     <div class="col-12 d-flex justify-content-center align-items-center">
       <button type="submit" class="btn btn-primary">Зареєструватися</button>

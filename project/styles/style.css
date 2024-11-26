@@ -61,3 +61,50 @@ footer {
         background: pink;
     }
 }
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030;
+}
+main {
+    margin-top: 56px; /* Height of the header */
+    height: calc(100% - 56px);
+}
+.title-section {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f8f9fa;
+    font-family: 'Dela Gothic One', sans-serif;
+}
+#faqCarousel {
+    width: 100%;
+    height: 100%;
+}
+.carousel-inner {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-item {
+    text-align: center;
+    padding: 20px;
+}
+.carousel-item h3 {
+    margin-bottom: 20px;
+}
+
+ .carousel-item {
+     text-align: center;
+     padding: 20px;
+     max-width: 800px; /* Встановлюємо обмеження ширини */
+     margin: 0 auto; /* Центруємо контент */
+     word-wrap: break-word; /* Запобігаємо виходу тексту за межі */
+ }
